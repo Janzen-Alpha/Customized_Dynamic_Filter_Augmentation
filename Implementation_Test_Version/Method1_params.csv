@@ -1,0 +1,9 @@
+Dataset,KNN,CDFA+KNN,LSTM,CDFA+LSTM
+AirPassengersDataset,"(3, 5, None, None)","(2, 3, 8, 1.0)","(24, (None, None))","(12, (2, 0.3))"
+AusBeerDataset,"(4, 2, None, None)","(2, 2, 2, 1.0)","(24, (None, None))","(12, (8, 1.0))"
+GasRateCO2Dataset,"(2, 1, None, None)","(2, 1, 2, 0.3)","(24, (None, None))","(12, (2, 1.0))"
+MonthlyMilkDataset,"(12, 2, None, None)","(8, 1, 2, 0.6)","(24, (None, None))","(24, (2, 1.0))"
+SunspotsDataset,"(4, 5, None, None)","(2, 5, 6, 0.3)","(12, (None, None))","(12, (8, 1.0))"
+WineDataset,"(12, 5, None, None)","(8, 5, 3, 1.0)","(24, (None, None))","(12, (6, 1.0))"
+WoolyDataset,"(4, 1, None, None)","(3, 3, 3, 1.0)","(24, (None, None))","(24, (8, 1.0))"
+HeartRateDataset,"(2, 1, None, None)","(2, 1, 2, 0.3)","(24, (None, None))","(24, (3, 0.6))"
