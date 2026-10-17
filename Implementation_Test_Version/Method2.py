@@ -459,6 +459,6 @@ if __name__ == "__main__":
     df_out = df.copy()
     for c in OURS + ["NAIVE"]:
         df_out[c + "_scaled"] = df_out[c] / df_out["NAIVE"]
-    df_out.to_csv(os.path.join(OUT_DIR, "m2_ml_cdfa_mae_table.csv"), index=False)
-    df_params.to_csv(os.path.join(OUT_DIR, "m2_ml_cdfa_params.csv"), index=False)
-    print("\nsaved: m2_ml_cdfa_mae_table.csv / m2_ml_cdfa_params.csv")
+    df_out.to_csv(os.path.join(OUT_DIR, "Method2_MAE.csv"), index=False)
+    df_params.to_csv(os.path.join(OUT_DIR, "Method2_params.csv"), index=False)
+    print("\nsaved: Method2_MAE.csv / Method2_params.csv")
