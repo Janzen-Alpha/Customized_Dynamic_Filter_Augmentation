@@ -1,0 +1,28 @@
+run = augmentations   workers = 12   time = 2026-11-14 13:27:39
+20 stocks x 14 years x 9 settings
+saved: D:\MPU\Publishment\10_CDFA Customized Dynamic Filter Augmentation Technique\Customized_Dynamic_Filter_Augmentation\paper 'Magnitude... CDFA' codes\outputs\cells_augmentations.csv  (2520 rows)
+
+Table III  Comparison with existing augmentations (Stocks dataset, 280 cells)
+--------------------------------------------------------------------------------------------
+Method                                          MAE Imp. vs None (%)       WR (%) CDFA win (%)         p
+--------------------------------------------------------------------------------------------
+None (no augmentation)                       1.9282 --                         --          --        --
+CDFA (Proposed)                              1.8440 +4.36 [+4.14, +4.57]     98.9          --   1.9e-47
+Window warping [5]                           1.8986 +1.55 [+1.28, +1.81]     73.2        88.6   1.1e-19
+Magnitude warping [6]                        1.9366 -0.43 [-0.68, -0.18]     42.1        97.1     0.004
+FrAug masking [7]                            1.9615 -1.99 [-2.38, -1.60]     26.8        96.4   1.1e-14
+FrAug mixing [7]                             1.9995 -3.77 [-4.19, -3.32]     15.7        98.2   3.4e-33
+--------------------------------------------------------------------------------------------
+
+Strength checks (not in Table III)
+--------------------------------------------------------------------------------------------
+Method                                          MAE Imp. vs None (%)       WR (%) CDFA win (%)         p
+--------------------------------------------------------------------------------------------
+Window warping, f=0.30                       1.8840 +2.19 [+1.88, +2.49]     82.5        83.2   1.6e-26
+Magnitude warping, sigma=0.01                1.9964 -3.47 [-4.02, -2.94]     23.9        98.2   9.7e-24
+Magnitude warping, sigma=0.20 (published)    6.5769 -239.62 [-254.71, -225.49]      0.0       100.0   1.1e-47
+--------------------------------------------------------------------------------------------
+dose (mean |change| / window sd): CDFA 0.11, window warping 0.15, magnitude warping 0.10, FrAug masking 0.25, FrAug mixing 0.36
+saved: D:\MPU\Publishment\10_CDFA Customized Dynamic Filter Augmentation Technique\Customized_Dynamic_Filter_Augmentation\paper 'Magnitude... CDFA' codes\outputs\table_augmentations.csv
+
+done in 464 s
